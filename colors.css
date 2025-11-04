@@ -7,43 +7,29 @@
 :root {
 
     /* VEX 색상 팔레트 */
-    --vex-blue:      #1988FF;         /* VEX 블루 */
-    --vex-green:     #67e8c3;         /* VEX 그린 */
-    --vex-sky:       #A4F0FA;         /* VEX 스카이 */
-    --vex-dark-red:  #881122;         /* VEX 다크 레드 */
-    --vex-red-org:   #FF4500;         /* VEX 레드 오렌지 */
+    --light-blue:      #1988FF;     /* VEX 블루 */
+    --dark-blue:       #1e3a8a;     /* VEX 다크 블루 */
+    --light-green:     #67e8c3;     /* VEX 그린 */
+    --light-sky:       #A4F0FA;     /* VEX 스카이 */
+    --dark-red:        #881122;     /* VEX 다크 레드 */
+    --light-gray:      #808080;     /* VEX 그레이 */
+    --black:           #000000;     /* VEX 블랙 */
+    --white:           #FFFFFF;     /* VEX 화이트 */
 
-    --vex-purple:    #C699FF;         /* VEX 퍼플 */
-    --vex-brown:     #FF9900;         /* VEX 브라운 */
-    --vex-gray:      #808080;         /* VEX 그레이 */
-    --vex-black:     #000000;         /* VEX 블랙 */
-    --vex-white:     #FFFFFF;         /* VEX 화이트 */
 
-    /* 파란색 계열 (Blue Tones) - 파랑과 하얀색 조합 선호 */
-    --primary-main:  #1e3a8a;         /* 메인 파란색 (진한 파랑) */
-    --primary-light: #283f80;        /* 밝은 파란색 (헤더용) */
-    --primary-dark:  #1e2092;        /* 어두운 파란색 (버튼용) */
-    --blue-light:    #3b82f6;        /* 밝은 파랑 */
-    --blue-medium:   #2563eb;        /* 중간 파랑 */
-    --blue-dark:     #1e40af;        /* 어두운 파랑 */
-    
-    /* 흰색 계열 (White Tones) */
-    --white-main:    #ffffff;        /* 순수 흰색 */
-    --white-off:     #f8fafc;        /* 살짝 회색빛 흰색 */
-    --white-bg:      #f0f4f8;        /* 배경용 연한 흰색 */
-    
-    /* 회색 계열 (Gray Tones) */
-    --gray-light:    #e5e7eb;        /* 연한 회색 */
-    --gray-medium:   #9ca3af;        /* 중간 회색 */
-    --gray-dark:     #4b5563;        /* 어두운 회색 */
-    --gray-bg:       #00000036;      /* 배경용 반투명 회색 */
-    
-    /* 텍스트 색상 (Text Colors) */
-    --text-main:     #1f2937;        /* 기본 텍스트 (어두운 회색) */
-    --text-sub:      #6b7280;        /* 보조 텍스트 */
-    
-    /* 기타 색상 (Other Colors) */
-    --shadow-main:   rgba(0, 0, 0, 0.1);      /* 그림자 색상 */
-    --shadow-dark:   rgba(0, 0, 0, 0.13);     /* 진한 그림자 */
+    /* 배경 색상 */
+    --bg-gray:         #00000036;   /* 배경 회색 */
+
+    /* 버튼 색상 */
+    --btn-blue:        #1e3a8a;     /* 버튼 파란색 */
+    --btn-green:       #67e8c3;     /* 버튼 그린색 */
+    --btn-sky:         #A4F0FA;     /* 버튼 스카이색 */
+    --btn-red:         #881122;     /* 버튼 레드색 */
+    --btn-org:         #FF4500;     /* 버튼 오렌지색 */
+    --btn-purple:      #C699FF;     /* 버튼 퍼플색 */
+    --btn-brown:       #FF9900;     /* 버튼 브라운색 */
+    --btn-gray:        #808080;     /* 버튼 그레이색 */
+    --btn-black:       #000000;     /* 버튼 블랙색 */
+    --btn-white:       #FFFFFF;     /* 버튼 화이트색 */
+
 }
-

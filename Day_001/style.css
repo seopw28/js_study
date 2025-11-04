@@ -27,7 +27,7 @@
 body {
     margin: 0;                          /* 브라우저 기본 마진 제거 */
     padding: 0;                         /* 브라우저 기본 패딩 제거 */
-    background-color: var(--gray-bg); 
+    background-color: var(--bg-gray); 
     display: flex;                       /* body 전체를 flex 컨테이너로 설정 */
     flex-direction: column;              /* 자식 요소들을 세로 방향으로 배치 */
     min-height: 100vh;                   /* 최소 높이를 화면 세로 크기에 맞춤 (100% 뷰포트) */
@@ -36,8 +36,8 @@ body {
 
 /* 헤더 스타일 - body 상단에 고정 */
 .header {
-    background-color: var(--primary-light); 
-    color: var(--text-white);                
+    background-color: var(--dark-blue);   /* 최상단 헤더 영역 */
+    color: var(--white);                
     padding: 20px 24px;                  /* 위아래 20px, 좌우 24px 여백 */
     flex-shrink: 0;                      /* 헤더 영역이 축소되지 않도록 고정 */
     width: 100%;                         
@@ -52,6 +52,6 @@ body {
 .header-title {
     margin: 0;                         
     font-size: 30px;             
-    color: var(--text-white);    /* 전역 컬러 팔레트 사용 */
+    color: var(--white);    /* 전역 컬러 팔레트 사용 */
     font-family: 'Calibri', Arial, sans-serif;
 }

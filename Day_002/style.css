@@ -1,0 +1,61 @@
+/* body 선택자: 전체 페이지의 기본 스타일을 설정 */
+body {
+    margin: 0; /* 마진 제거: 브라우저가 기본적으로 적용하는 요소 바깥쪽 여백을 0으로 설정하여 공백 없이 시작 */
+    padding: 0; /* 패딩 제거: 브라우저가 기본적으로 적용하는 요소 안쪽 여백을 0으로 설정 */
+    background-color: var(--bg-gray); /* 배경색 설정: 전역 컬러 팔레트(colors.css)에 정의된 --bg-gray 변수를 사용하여 회색 배경 적용 */
+    font-family: 'Calibri', Arial, sans-serif; /* 글꼴 설정: 첫 번째 글꼴(Calibri)을 사용하고, 없으면 Arial, 그것도 없으면 sans-serif 계열 글꼴 사용 */
+}
+
+/* 화면 스타일: 모든 화면(screen 클래스)에 공통으로 적용되는 스타일 */
+.screen {
+    display: none; /* 기본적으로 화면을 숨김: display 속성을 none으로 설정하면 요소가 완전히 사라지고 공간도 차지하지 않음 */
+    min-height: calc(100vh - 7vh); /* 최소 높이 설정: calc() 함수를 사용하여 화면 높이(100vh)에서 바텀 네비게이션 높이(7vh)를 뺀 값으로 설정 */
+    /* 100vh: 뷰포트 높이의 100% (화면 전체 높이) */
+    /* calc(): CSS에서 계산을 수행하는 함수 */
+    padding: 20px; /* 안쪽 여백: 화면 내용과 화면 가장자리 사이에 20픽셀의 여백을 추가 */
+    justify-content: center; /* 가로 방향 중앙 정렬: flex 컨테이너 내에서 자식 요소들을 가로 방향으로 가운데 정렬 */
+    align-items: center; /* 세로 방향 중앙 정렬: flex 컨테이너 내에서 자식 요소들을 세로 방향으로 가운데 정렬 */
+    /* 주의: display가 flex일 때만 justify-content와 align-items가 작동함 */
+}
+
+/* 활성화된 화면 스타일: active 클래스가 있는 화면만 표시 */
+.screen.active {
+    display: flex; /* flex 컨테이너로 표시: display를 flex로 설정하면 요소가 보이면서 flexbox 레이아웃이 활성화됨 */
+    /* flexbox: 요소들을 유연하게 배치할 수 있는 레이아웃 방식 */
+}
+
+/* 화면 내부의 h2 태그 스타일: 화면 제목의 스타일 */
+.screen h2 {
+    color: var(--white); /* 텍스트 색상: 전역 컬러 팔레트의 --white 변수를 사용하여 흰색 텍스트 적용 */
+    font-size: 32px; /* 글자 크기: 32픽셀 크기로 설정 */
+}
+
+/* 바텀 네비게이션 스타일: 화면 하단에 고정된 네비게이션 바 */
+.bottom-nav {
+    position: fixed; /* 고정 위치: 화면을 스크롤해도 항상 같은 위치에 고정됨 (absolute와 달리 뷰포트 기준) */
+    bottom: 0; /* 화면 맨 아래: bottom 속성을 0으로 설정하여 화면의 가장 아래쪽에 배치 */
+    width: 100%; /* 전체 너비: 부모 요소(화면)의 100% 너비를 차지하여 화면 전체 가로폭 사용 */
+    height: 7vh; 
+    background-color: var(--dark-blue); /* 배경색: 전역 컬러 팔레트의 --dark-blue 변수를 사용하여 진한 파란색 배경 적용 */
+    display: flex; /* flex 컨테이너: 내부 버튼들을 flexbox로 배치하여 균등하게 분배 */
+    justify-content: space-around; /* 가로 방향 배치: 버튼들 사이에 균등한 간격을 두고 배치 (양쪽 끝에도 간격 있음) */
+    align-items: center; /* 세로 방향 중앙 정렬: 버튼들을 네비게이션 바의 세로 중앙에 배치 */
+}
+
+/* 네비게이션 버튼 스타일: 바텀 네비게이션 내부의 각 버튼 */
+.nav-btn {
+    flex: 1; /* flex 속성: 남은 공간을 균등하게 분배하여 각 버튼이 같은 너비를 가지도록 함 */
+    /* flex: 1은 flex-grow: 1, flex-shrink: 1, flex-basis: 0의 축약형 */
+    height: 100%; /* 높이: 부모 요소(네비게이션 바)의 100% 높이를 차지하여 네비게이션 바 전체 높이 사용 */
+    background-color: transparent; /* 배경색 투명: 기본적으로 버튼 배경을 투명하게 설정 (클릭 영역은 있지만 보이지 않음) */
+    border: none; /* 테두리 제거: 버튼의 기본 테두리를 제거하여 깔끔한 디자인 */
+    color: var(--white); /* 텍스트 색상: 전역 컬러 팔레트의 --white 변수를 사용하여 흰색 텍스트 적용 */
+    font-size: 16px; /* 글자 크기: 버튼 텍스트를 16픽셀 크기로 설정 */
+    cursor: pointer; /* 마우스 커서: 마우스를 올렸을 때 손가락 모양(pointer)으로 변경하여 클릭 가능함을 시각적으로 표시 */
+}
+
+/* 활성화된 네비게이션 버튼 스타일: 현재 선택된 탭 버튼 */
+.nav-btn.active {
+    background-color: var(--light-blue); /* 배경색 변경: active 클래스가 있는 버튼만 배경색을 밝은 파란색(--light-blue)으로 변경하여 활성화 상태 표시 */
+    /* 이 선택자는 .nav-btn.active로 두 클래스가 모두 있는 요소만 선택 */
+}
