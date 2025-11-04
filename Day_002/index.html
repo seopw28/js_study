@@ -1,44 +1,16 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
 
-<head> 
-    <meta charset="UTF-8"> 
-    <title>APP Name</title> 
-    <link rel="stylesheet" href="../colors.css"> 
-    <link rel="stylesheet" href="style.css"> 
-</head> 
+<head>
+    <meta charset="UTF-8">
+    <title>APP Name</title>
+    <link rel="stylesheet" href="../colors.css">
+    <link rel="stylesheet" href="style.css">
+</head>
 
-<body> 
+<body>
+    <button id="myButton" class="center-button"> 클릭 </button>
 
-    <!-- 화면 1: 첫 번째 화면 영역 -->
-    <div id="screen1" class="screen active"> <!-- div: 구역 생성 컨테이너 -->
-        <!-- id="screen1": JavaScript에서 이 요소를 특정하기 위한 고유 ID -->
-        <!-- class="screen": CSS에서 모든 화면에 공통 스타일을 적용하기 위한 클래스 -->
-        <!-- class="active": 현재 보이는 화면을 표시하기 위한 클래스 (초기에는 화면1이 보이므로 active 클래스 포함) -->
-        <h2>화면 1</h2> <!-- h2 태그: 두 번째 수준의 제목 태그 (의미론적 구조를 위해 제목 태그 사용) -->
-    </div> 
-
-    <!-- 화면 2: 두 번째 화면 영역 -->
-    <div id="screen2" class="screen"> 
-        <!-- class="screen": 화면 스타일을 위한 클래스 -->
-        <!-- active 클래스가 없음: 초기 상태에서는 이 화면이 숨겨져 있음 -->
-        <h2>화면 2</h2> <!-- 두 번째 화면의 제목 -->
-    </div> 
-
-    <!-- 바텀 네비게이션: 화면 하단에 고정된 네비게이션 바 -->
-    <nav class="bottom-nav"> <!-- nav 태그: 네비게이션 영역을 나타내는 시맨틱 태그 (의미론적 구조) -->
-        <!-- class="bottom-nav": CSS에서 바텀 네비게이션 스타일을 적용하기 위한 클래스 -->
-        <button class="nav-btn active" onclick="showScreen(1)">화면1</button> <!-- 버튼 태그: 클릭 가능한 버튼 요소 -->
-        <!-- class="nav-btn": 버튼 스타일을 위한 클래스 -->
-        <!-- class="active": 현재 선택된 탭을 표시하기 위한 클래스 (초기에는 화면1 버튼이 활성화됨) -->
-        <!-- onclick="showScreen(1)": 버튼 클릭 시 JavaScript의 showScreen 함수를 호출하고 숫자 1을 전달 -->
-        <!-- "화면1": 버튼에 표시되는 텍스트 -->
-        <button class="nav-btn" onclick="showScreen(2)">화면2</button> <!-- 두 번째 네비게이션 버튼 -->
-        <!-- onclick="showScreen(2)": 클릭 시 showScreen 함수에 숫자 2를 전달하여 화면2를 표시 -->
-        <!-- active 클래스가 없음: 초기 상태에서는 이 버튼이 비활성화되어 있음 -->
-    </nav> 
-
-    <script src="script.js"></script> <!-- 외부 JavaScript 파일 연결: 화면 전환 기능 구현 -->
-
-</body> 
-</html> 
+    <script src="script.js"></script>
+</body>
+</html>

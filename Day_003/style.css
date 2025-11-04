@@ -1,0 +1,37 @@
+/* 페이지 기본 스타일 */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-gray);
+    font-family: 'Calibri', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* 위쪽 컨테이너 */
+.korea-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(131, 21, 43);
+}
+
+/* 아래쪽 컨테이너 */
+.yonsei-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(29, 63, 167);
+}
+
+/* 컨테이너 내부 글자 스타일 */
+.korea-container h2,
+.yonsei-container h2 {
+    color: var(--white);
+    font-size: 55px;
+    font-weight: bold;
+    font-family: 'Calibri', Arial, sans-serif;
+}
