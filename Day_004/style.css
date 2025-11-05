@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-gray);
+    font-family: 'Calibri', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.dropdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown {
+    padding: 12px 20px;
+    font-size: 14px;
+    font-family: 'Calibri', Arial, sans-serif;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    min-width: 250px;
+    height: 55px;
+    color: #000;
+}
+
+.dropdown:hover {
+    border-color: #007bff;
+}
+
+.dropdown:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* placeholder가 선택된 상태일 때만 회색 텍스트 */
+.dropdown:invalid {
+    color: #999;
+}
+
+/* 선택 가능한 옵션은 검은색 */
+.dropdown option:not(:disabled),
+.dropdown option.selectable-option {
+    color: #000 !important;
+}
+
+/* placeholder 옵션 숨김 */
+.dropdown option:disabled {
+    display: none;
+}
